@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中英翻译词典</title>
+</head>
+<body>
+<h1 style="text-align: center">中英翻译词典</h1><br/>
+<div style="text-align: center">
+    <form action="translatorLater" method="post" style="font-size: 20px;">
+        请输入要翻译的单词：<input name="word" type="text" style="height: 25px;"/>
+        <input type="submit" style="height: 25px;" value="翻译">
+    </form>
+    <div style="margin-top: 50px;margin-left: 200px; margin-right: 200px;">
+        <span style="font-size: 18px;float: left;color: red;">翻译结果：</span><br/>
+        <span style="font-size: 16px;float: left;margin-left: 40px;margin-top: 10px;" th:text="${infor}"></span>
+    </div>
+</div>
+
+</body>
+</html>
